@@ -6,10 +6,8 @@ import os
 def get_mp3_files(directory):
     return [os.path.join(directory,x) for x in os.listdir(directory) if '.mp3' in x and os.path.isfile(os.path.join(directory,x))]
 
-
-def main():
-    directory = r'D:\Music\Soundtrack\Assorted Anime Songs'
-    mp3_files = get_mp3_files(directory)
+def sort_songs_by_title(direcotry):
+    mp3_files = get_mp3_files(direcotry)
     mp3_tuples = []
 
     for mp3 in mp3_files:
@@ -25,6 +23,10 @@ def main():
         tag.track_num = counter
         tag.save()
         counter += 1
+
+def main():
+    directory = r'D:\Music\Soundtrack\Assorted Anime Songs'
+    sort_songs_by_title(direcotry)
     
 
 if __name__ == "__main__":
