@@ -6,6 +6,8 @@ import urllib
 import sys
 
 '''
+python <path to 4chin_images.py> <thread url> <directory to save in>
+
 TO DO:
 Create directory if it does not exist
 
