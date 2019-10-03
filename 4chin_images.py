@@ -10,6 +10,7 @@ python <path to 4chin_images.py> <thread url> <directory to save in>
 
 TO DO:
 Create directory if it does not exist
+Get image file name - get_image_urls will return a list of tuples (image name, image url)
 
 '''
 def download_image(url, directory):
